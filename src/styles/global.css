@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --bg-color-primary: #201334;
+  --bg-color-second: #2f2244;
+  --bg-color-third: #483960;
+  /* Background more light */
+  --ty-color-primary: #f7f4fa;
+  --ty-color-second: #d6cee3;
+  /* Only AA */
+  --ty-color-third: #a294b8;
+  /* Only light backgrounds */
+  --ty-color-fourth: #201334;
+  /* Initial states or highlighted words */
+  --ac-color-primary: #c2ec80;
+  /* Hover states */
+  --ac-color-second: #d6ff94;
+}
+
+/* Global CSS Start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  min-width: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  min-height: 100dvh;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color-primary);
+  color: var(--ty-color-primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Global CSS End */
