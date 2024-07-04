@@ -1,0 +1,27 @@
+---
+import NavHeader from "./navheader/NavHeader.astro";
+import Footer from "./Footer.astro";
+import "../styles/global.css";
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <NavHeader />
+    <h1>{title}</h1>
+    <slot />
+    <Footer />
+  </body>
+</html>
