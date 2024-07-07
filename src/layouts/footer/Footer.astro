@@ -1,0 +1,34 @@
+---
+import "./footer.css";
+
+const date: number = new Date().getFullYear();
+---
+
+<footer class="primary-footer">
+  <div class="social-media">
+    <ul>
+      <li>
+        <i class="bx bxl-github bx-md"></i><a href="#"> GitHub</a>
+      </li>
+      <li>
+        <i class="bx bxl-linkedin-square bx-md"></i><a href="#"> LinkedIn</a>
+      </li>
+      <li><i class="bx bxl-twitter bx-md"></i><a href="#"> X</a></li>
+    </ul>
+  </div>
+  <div class="rights">
+    <section class="custom-text">
+      Made with
+      <a href="https://astro.build/" target="_blank"
+        ><img
+          src="./icons/logo-astro.png"
+          alt="Astro logo"
+          style="margin-top: 8px"
+        /></a
+      >
+      and
+      <img class="heart" src="./images/heart.png" alt="Heart icon" />
+    </section>
+    <p>© {date} Sergio González. All rights reserved.</p>
+  </div>
+</footer>
