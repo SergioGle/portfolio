@@ -1,155 +1,33 @@
 ---
-import BaseLayout from "@layouts/BaseLayout.astro";
-
-const pageTitle = "Home";
+import About from "@components/about/About.astro";
+import Contact from "@components/contact/Contact.astro";
+import Home from "@components/home/Home.astro";
+import Projects from "@components/portfolio/Projects.astro";
+import Footer from "@layouts/footer/Footer.astro";
+import NavHeader from "@layouts/navheader/NavHeader.astro";
+import "../styles/global.css";
 ---
 
-<BaseLayout title={pageTitle}>
-  <p>
-    lorem ipsum dolor sit amet magna sapien facilisi donec luctus velit dui diam
-    volutpat proin eget fringilla eros felis imperdiet magnis blandit convallis
-    ultrices himenaeos massa gravida penatibus porttitor justo etiam ipsum
-    mattis elit euismod mus ex lacinia lobortis id mi dolor fusce consequat
-    condimentum efficitur potenti platea per adipiscing natoque congue dictumst
-    libero et hac pharetra ante sollicitudin nostra ad sodales quam risus
-    consectetuer quis pellentesque dis sagittis tempus aenean lacus elementum
-    taciti hendrerit praesent si cras molestie interdum sem vitae torquent lorem
-    eu vulputate maximus tortor venenatis phasellus nunc sed habitant suscipit
-    primis a laoreet tristique vehiculalorem ipsum dolor sit amet magna sapien
-    facilisi donec luctus velit dui diam volutpat proin eget fringilla eros
-    felis imperdiet magnis blandit convallis ultrices himenaeos massa gravida
-    penatibus porttitor justo etiam ipsum mattis elit euismod mus ex lacinia
-    lobortis id mi dolor fusce consequat condimentum efficitur potenti platea
-    per adipiscing natoque congue dictumst libero et hac pharetra ante
-    sollicitudin nostra ad sodales quam risus consectetuer quis pellentesque dis
-    sagittis tempus aenean lacus elementum taciti hendrerit praesent si cras
-    molestie interdum sem vitae torquent lorem eu vulputate maximus tortor
-    venenatis phasellus nunc sed habitant suscipit primis a laoreet tristique
-    vehiculalorem ipsum dolor sit amet magna sapien facilisi donec luctus velit
-    dui diam volutpat proin eget fringilla eros felis imperdiet magnis blandit
-    convallis ultrices himenaeos massa gravida penatibus porttitor justo etiam
-    ipsum mattis elit euismod mus ex lacinia lobortis id mi dolor fusce
-    consequat condimentum efficitur potenti platea per adipiscing natoque congue
-    dictumst libero et hac pharetra ante sollicitudin nostra ad sodales quam
-    risus consectetuer quis pellentesque dis sagittis tempus aenean lacus
-    elementum taciti hendrerit praesent si cras molestie interdum sem vitae
-    torquent lorem eu vulputate maximus tortor venenatis phasellus nunc sed
-    habitant suscipit primis a laoreet tristique vehiculalorem ipsum dolor sit
-    amet magna sapien facilisi donec luctus velit dui diam volutpat proin eget
-    fringilla eros felis imperdiet magnis blandit convallis ultrices himenaeos
-    massa gravida penatibus porttitor justo etiam ipsum mattis elit euismod mus
-    ex lacinia lobortis id mi dolor fusce consequat condimentum efficitur
-    potenti platea per adipiscing natoque congue dictumst libero et hac pharetra
-    ante sollicitudin nostra ad sodales quam risus consectetuer quis
-    pellentesque dis sagittis tempus aenean lacus elementum taciti hendrerit
-    praesent si cras molestie interdum sem vitae torquent lorem eu vulputate
-    maximus tortor venenatis phasellus nunc sed habitant suscipit primis a
-    laoreet tristique vehiculalorem ipsum dolor sit amet magna sapien facilisi
-    donec luctus velit dui diam volutpat proin eget fringilla eros felis
-    imperdiet magnis blandit convallis ultrices himenaeos massa gravida
-    penatibus porttitor justo etiam ipsum mattis elit euismod mus ex lacinia
-    lobortis id mi dolor fusce consequat condimentum efficitur potenti platea
-    per adipiscing natoque congue dictumst libero et hac pharetra ante
-    sollicitudin nostra ad sodales quam risus consectetuer quis pellentesque dis
-    sagittis tempus aenean lacus elementum taciti hendrerit praesent si cras
-    molestie interdum sem vitae torquent lorem eu vulputate maximus tortor
-    venenatis phasellus nunc sed habitant suscipit primis a laoreet tristique
-    vehicula lorem ipsum dolor sit amet magna sapien facilisi donec luctus velit
-    dui diam volutpat proin eget fringilla eros felis imperdiet magnis blandit
-    convallis ultrices himenaeos massa gravida penatibus porttitor justo etiam
-    ipsum mattis elit euismod mus ex lacinia lobortis id mi dolor fusce
-    consequat condimentum efficitur potenti platea per adipiscing natoque congue
-    dictumst libero et hac pharetra ante sollicitudin nostra ad sodales quam
-    risus consectetuer quis pellentesque dis sagittis tempus aenean lacus
-    elementum taciti hendrerit praesent si cras molestie interdum sem vitae
-    torquent lorem eu vulputate maximus tortor venenatis phasellus nunc sed
-    habitant suscipit primis a laoreet tristique vehicula lorem ipsum dolor sit
-    amet magna sapien facilisi donec luctus velit dui diam volutpat proin eget
-    fringilla eros felis imperdiet magnis blandit convallis ultrices himenaeos
-    massa gravida penatibus porttitor justo etiam ipsum mattis elit euismod mus
-    ex lacinia lobortis id mi dolor fusce consequat condimentum efficitur
-    potenti platea per adipiscing natoque congue dictumst libero et hac pharetra
-    ante sollicitudin nostra ad sodales quam risus consectetuer quis
-    pellentesque dis sagittis tempus aenean lacus elementum taciti hendrerit
-    praesent si cras molestie interdum sem vitae torquent lorem eu vulputate
-    maximus tortor venenatis phasellus nunc sed habitant suscipit primis a
-    laoreet tristique vehicula lorem ipsum dolor sit amet magna sapien facilisi
-    donec luctus velit dui diam volutpat proin eget fringilla eros felis
-    imperdiet magnis blandit convallis ultrices himenaeos massa gravida
-    penatibus porttitor justo etiam ipsum mattis elit euismod mus ex lacinia
-    lobortis id mi dolor fusce consequat condimentum efficitur potenti platea
-    per adipiscing natoque congue dictumst libero et hac pharetra ante
-    sollicitudin nostra ad sodales quam risus consectetuer quis pellentesque dis
-    sagittis tempus aenean lacus elementum taciti hendrerit praesent si cras
-    molestie interdum sem vitae torquent lorem eu vulputate maximus tortor
-    venenatis phasellus nunc sed habitant suscipit primis a laoreet tristique
-    vehicula lorem ipsum dolor sit amet magna sapien facilisi donec luctus velit
-    dui diam volutpat proin eget fringilla eros felis imperdiet magnis blandit
-    convallis ultrices himenaeos massa gravida penatibus porttitor justo etiam
-    ipsum mattis elit euismod mus ex lacinia lobortis id mi dolor fusce
-    consequat condimentum efficitur potenti platea per adipiscing natoque congue
-    dictumst libero et hac pharetra ante sollicitudin nostra ad sodales quam
-    risus consectetuer quis pellentesque dis sagittis tempus aenean lacus
-    elementum taciti hendrerit praesent si cras molestie interdum sem vitae
-    torquent lorem eu vulputate maximus tortor venenatis phasellus nunc sed
-    habitant suscipit primis a laoreet tristique vehicula lorem ipsum dolor sit
-    amet magna sapien facilisi donec luctus velit dui diam volutpat proin eget
-    fringilla eros felis imperdiet magnis blandit convallis ultrices himenaeos
-    massa gravida penatibus porttitor justo etiam ipsum mattis elit euismod mus
-    ex lacinia lobortis id mi dolor fusce consequat condimentum efficitur
-    potenti platea per adipiscing natoque congue dictumst libero et hac pharetra
-    ante sollicitudin nostra ad sodales quam risus consectetuer quis
-    pellentesque dis sagittis tempus aenean lacus elementum taciti hendrerit
-    praesent si cras molestie interdum sem vitae torquent lorem eu vulputate
-    maximus tortor venenatis phasellus nunc sed habitant suscipit primis a
-    laoreet tristique vehicula lorem ipsum dolor sit amet magna sapien facilisi
-    donec luctus velit dui diam volutpat proin eget fringilla eros felis
-    imperdiet magnis blandit convallis ultrices himenaeos massa gravida
-    penatibus porttitor justo etiam ipsum mattis elit euismod mus ex lacinia
-    lobortis id mi dolor fusce consequat condimentum efficitur potenti platea
-    per adipiscing natoque congue dictumst libero et hac pharetra ante
-    sollicitudin nostra ad sodales quam risus consectetuer quis pellentesque dis
-    sagittis tempus aenean lacus elementum taciti hendrerit praesent si cras
-    molestie interdum sem vitae torquent lorem eu vulputate maximus tortor
-    venenatis phasellus nunc sed habitant suscipit primis a laoreet tristique
-    vehicula lorem ipsum dolor sit amet magna sapien facilisi donec luctus velit
-    dui diam volutpat proin eget fringilla eros felis imperdiet magnis blandit
-    convallis ultrices himenaeos massa gravida penatibus porttitor justo etiam
-    ipsum mattis elit euismod mus ex lacinia lobortis id mi dolor fusce
-    consequat condimentum efficitur potenti platea per adipiscing natoque congue
-    dictumst libero et hac pharetra ante sollicitudin nostra ad sodales quam
-    risus consectetuer quis pellentesque dis sagittis tempus aenean lacus
-    elementum taciti hendrerit praesent si cras molestie interdum sem vitae
-    torquent lorem eu vulputate maximus tortor venenatis phasellus nunc sed
-    habitant suscipit primis a laoreet tristique vehicula lorem ipsum dolor sit
-    amet magna sapien facilisi donec luctus velit dui diam volutpat proin eget
-    fringilla eros felis imperdiet magnis blandit convallis ultrices himenaeos
-    massa gravida penatibus porttitor justo etiam ipsum mattis elit euismod mus
-    ex lacinia lobortis id mi dolor fusce consequat condimentum efficitur
-    potenti platea per adipiscing natoque congue dictumst libero et hac pharetra
-    ante sollicitudin nostra ad sodales quam risus consectetuer quis
-    pellentesque dis sagittis tempus aenean lacus elementum taciti hendrerit
-    praesent si cras molestie interdum sem vitae torquent lorem eu vulputate
-    maximus tortor venenatis phasellus nunc sed habitant suscipit primis a
-    laoreet tristique vehicula lorem ipsum dolor sit amet magna sapien facilisi
-    donec luctus velit dui diam volutpat proin eget fringilla eros felis
-    imperdiet magnis blandit convallis ultrices himenaeos massa gravida
-    penatibus porttitor justo etiam ipsum mattis elit euismod mus ex lacinia
-    lobortis id mi dolor fusce consequat condimentum efficitur potenti platea
-    per adipiscing natoque congue dictumst libero et hac pharetra ante
-    sollicitudin nostra ad sodales quam risus consectetuer quis pellentesque dis
-    sagittis tempus aenean lacus elementum taciti hendrerit praesent si cras
-    molestie interdum sem vitae torquent lorem eu vulputate maximus tortor
-    venenatis phasellus nunc sed habitant suscipit primis a laoreet tristique
-    vehicula lorem ipsum dolor sit amet magna sapien facilisi donec luctus velit
-    dui diam volutpat proin eget fringilla eros felis imperdiet magnis blandit
-    convallis ultrices himenaeos massa gravida penatibus porttitor justo etiam
-    ipsum mattis elit euismod mus ex lacinia lobortis id mi dolor fusce
-    consequat condimentum efficitur potenti platea per adipiscing natoque congue
-    dictumst libero et hac pharetra ante sollicitudin nostra ad sodales quam
-    risus consectetuer quis pellentesque dis sagittis tempus aenean lacus
-    elementum taciti hendrerit praesent si cras molestie interdum sem vitae
-    torquent lorem eu vulputate maximus tortor venenatis phasellus nunc sed
-    habitant suscipit primis a laoreet tristique vehicula
-  </p>
-</BaseLayout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/icons/LogoSergio_Green.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Sergio González</title>
+  </head>
+  <body>
+    <NavHeader />
+    <main>
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+    </main>
+    <Footer />
+  </body>
+</html>
