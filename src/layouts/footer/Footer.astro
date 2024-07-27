@@ -1,7 +1,10 @@
 ---
+import Tooltip from "@components/tooltip/Tooltip.astro";
 import "./footer.css";
 
 const date: number = new Date().getFullYear();
+const text = "01101100011011110111011001100101";
+const contentText = "in binary 🤓";
 ---
 
 <footer class="primary-footer">
@@ -26,8 +29,11 @@ const date: number = new Date().getFullYear();
           style="margin-top: 8px"
         /></a
       >
-      and
-      <img class="heart" src="./images/heart.png" alt="Heart icon" />
+      and&#160;<Tooltip
+        text={text}
+        url="./images/heart.png"
+        contentText={contentText}
+      />
     </section>
     <p>© {date} Sergio González. All rights reserved.</p>
   </div>

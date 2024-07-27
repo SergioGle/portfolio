@@ -26,7 +26,7 @@
 
 .social-media li:hover,
 .social-media li:focus {
-  color: var(--ty-color-third);
+  color: var(--ac-color-primary);
 }
 
 .rights {
@@ -41,7 +41,7 @@
   align-items: center;
 }
 
-.custom-text img {
+.custom-text a img {
   width: 2rem;
 }
 
@@ -49,11 +49,6 @@
   font-size: 14px;
   color: var(--ty-color-third);
   text-align: center;
-}
-
-.custom-text .heart {
-  width: 1.5rem;
-  margin-left: 8px;
 }
 
 @media only screen and (max-width: 500px) {

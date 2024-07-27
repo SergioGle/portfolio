@@ -1,0 +1,29 @@
+---
+interface Prop {
+  text: string;
+  url?: string;
+  contentText: string;
+}
+import "./tooltip.css";
+
+const { text, url, contentText } = Astro.props;
+---
+
+<div class="tooltip">
+  {text}
+  <span class="tooltiptext">
+    &#160{contentText}
+  </span>
+</div>
+
+<script define:vars={{ url }}>
+  if (url) {
+    const node = document.querySelector(".tooltiptext");
+    const img = document.createElement("img");
+    img.className = "heart";
+    img.src = url;
+    img.alt = "Heart icon";
+
+    node.insertBefore(img, node.firstChild);
+  }
+</script>
