@@ -1,37 +1,42 @@
 ---
+import type { NavItem } from "~/types";
 import "./navheader.css";
+
+const navItems: Array<NavItem> = [
+  { title: "Home", url: "#home" },
+  { title: "About", url: "#about" },
+  { title: "Projects", url: "#projects" },
+  { title: "Blog", url: "#blog" },
+  { title: "Contact", url: "#contact" },
+];
 ---
 
 <header class="primary-header">
   <nav class="primary-header__inner">
     <div class="logo">
-      <span class="logo">LOGO</span>
+      <img src="/icons/LogoSergio_Green.png" alt="Web main logo" />
     </div>
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="menu-icon-open">&#9776;</label>
     <label for="menu-toggle" class="menu-icon-close">&#9747;</label>
     <ul class="menu">
-      <li>
-        <a href="#home" class="active"><i class="bx bxs-home"></i> Home</a>
-      </li>
-      <li>
-        <a href="#about"><i class="bx bxs-user"></i> About</a>
-      </li>
-      <li>
-        <a href="#portfolio"><i class="bx bxs-briefcase"></i> Portfolio</a>
-      </li>
-      <li>
-        <a href="#blog"><i class="bx bxs-book-open"></i> Blog</a>
-      </li>
-      <li>
-        <a href="#contact"><i class="bx bx-conversation"></i> Contact</a>
-      </li>
-      <!-- <li>
-        <a href="#service"><i class="bx bx-list-ul"></i> Services</a>
-      </li> -->
+      {
+        navItems.map(({ title, url }) => (
+          <li>
+            <a class="li-menu" href={url}>
+              {title}
+            </a>
+            {/* <span class="slider-line" /> */}
+          </li>
+        ))
+      }
     </ul>
   </nav>
 </header>
+
+<script>
+  import "./navheader.ts";
+</script>
 
 <!-- <script>
   const primaryHeader = document.querySelector(".primary-header");
